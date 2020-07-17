@@ -8,6 +8,9 @@ namespace COMP123_MidTermExam
 {
     interface IGenerateLottoNumbers
     {
+        /// <summary>
+        /// This the interface method which will call PickElements method
+        /// </summary>
         void GenerateLottoNumbers();
     }
 }

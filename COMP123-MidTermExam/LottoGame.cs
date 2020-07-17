@@ -1,4 +1,13 @@
-﻿using System;
+﻿// ===========================================================================================================
+// Author Name             : Hussam Eldin Mohamed 
+// Author's student number : 301090956
+// Date for last Modified  : July 17,2020
+// Program description     : This Program will generate random number and store it in a list
+//                           the program has multiple classes and one interface 
+// Revision History        : --------
+// ===========================================================================================================
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,7 +24,8 @@ namespace COMP123_MidTermExam
      * @property {int} ElementNum;
      * @property {int} SetSize;
      */
-    public abstract class LottoGame
+
+   public abstract class LottoGame
     {
         // PRIVATE INSTANCE VARIABLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         
@@ -114,6 +124,9 @@ namespace COMP123_MidTermExam
         // PRIVATE METHODS ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
         // CREATE the private _initialize method here -----------------------------
+        /// <summary>
+        /// initialize method will initiate number list , element list and random , so other method will be able to access and utilize them . 
+        /// </summary>
         private void _initialize()
         {
             _numberList = new List<int>();
@@ -167,7 +180,7 @@ namespace COMP123_MidTermExam
 
         // CREATE the public PickElements method here ----------------------------
         /// <summary>
-        /// pickElements method will grantee unrepeated and random numbers are available  in both sets 
+        /// PickElements method will grantee  unique  and random numbers are exist in number list 
         /// </summary>
         public void PickElements()
         {
