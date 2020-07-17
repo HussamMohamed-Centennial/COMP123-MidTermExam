@@ -116,7 +116,7 @@ namespace COMP123_MidTermExam
         // CREATE the private _initialize method here -----------------------------
         private void _initialize()
         {
-            _elementList = new List<int>();
+            _numberList = new List<int>();
             _elementList = new List<int>();
             _random = new Random();
         }
@@ -128,11 +128,12 @@ namespace COMP123_MidTermExam
         private void _build()
         {
             int counter = 0;
-            while (counter<SetSize)
+            while (counter < SetSize)
             {
-                NumberList.Add(random.Next(1,100));
+                NumberList.Add(random.Next(1, 99));
                 counter++;
             }
+
         }
 
         // OVERRIDEN METHODS ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -195,7 +196,9 @@ namespace COMP123_MidTermExam
                     ElementList.Add(selection);
                     NumberList.RemoveAt(selectionPostion);
                 } while (counter<NumberList.Count);
+                
             }
+            
         }
     }
 }
