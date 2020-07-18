@@ -36,5 +36,88 @@ namespace COMP123_MidTermExam
         {
             PickElements();
         }
+
+        public void print()
+        {
+            string[] finalNumbers = ToString().Split(' ');
+            Console.Write("Ticket 1: ");
+            for (int i = 0; i < 7; i++)
+            {
+                if (finalNumbers[i] == String.Empty)
+                {
+                    Console.Write($"00" + " ");
+                }
+                else
+                {
+                    Console.Write($"{finalNumbers[i],2}" + " ");
+                }
+            }
+            Console.WriteLine();
+            Console.Write("Ticket 2: ");
+            for (int i = 7; i < 14; i++)
+            {
+                if (finalNumbers[i] == String.Empty)
+                {
+                    Console.Write($"00" + " ");
+                }
+                else
+                {
+                    Console.Write($"{finalNumbers[i],2}" + " ");
+                }
+            }
+            Console.WriteLine();
+            Console.Write("Ticket 3: ");
+            for (int i = 14; i < 21; i++)
+            {
+                if (finalNumbers[i] == String.Empty)
+                {
+                    Console.Write($"00" + " ");
+                }
+                else
+                {
+                    Console.Write($"{finalNumbers[i],2}" + " ");
+                }
+            }
+            Console.WriteLine();
+            Console.Write("Ticket 4: ");
+            for (int i = 21; i < 28; i++)
+            {
+                if (finalNumbers[i] == String.Empty)
+                {
+                    Console.Write($"00" + " ");
+                }
+                else
+                {
+                    Console.Write($"{finalNumbers[i],2}" + " ");
+                }
+            }
+            Console.WriteLine();
+            Console.Write("Ticket 5: ");
+            for (int i = 28; i < 35; i++)
+            {
+                if (finalNumbers[i] == String.Empty)
+                {
+                    Console.Write($"00" + " ");
+                }
+                else
+                {
+                    Console.Write($"{finalNumbers[i],2}" + " ");
+                }
+            }
+            Console.WriteLine();
+            Console.Write("Ticket 6: ");
+            for (int i = 35; i < 42; i++)
+            {
+                if (finalNumbers[i] == String.Empty)
+                {
+                    Console.Write($"00" + " ");
+                }
+                else
+                {
+                    Console.Write($"{finalNumbers[i],2}" + " ");
+                }
+            }
+            Console.WriteLine();
+        }
     }
 }
